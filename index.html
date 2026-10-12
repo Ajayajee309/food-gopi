@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodie Hub | Fresh Food, Great Taste! | Coimbatore Fast-Food Restaurant</title>
+  <meta name="description" content="Foodie Hub - Coimbatore's premier fast-food destination. Sizzling burgers, stone-baked pizzas, grilled sandwiches, peri-peri fries & authentic South Indian fusion snacks. Fast 30-min delivery across Coimbatore.">
+  <meta name="keywords" content="Foodie Hub, Coimbatore fast food, burgers Coimbatore, pizza delivery Coimbatore, Gandhipuram restaurant, RS Puram food, South Indian snacks">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍔</text></svg>">
+  
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="top-notice-bar" aria-label="Announcement">
+    <div class="container">
+      <div class="notice-left">
+        <span class="notice-badge">⚡ Coimbatore Express</span>
+        <span>Hot & Fresh delivery within 30 mins across Gandhipuram, RS Puram, Peelamedu & more!</span>
+      </div>
+      <div class="notice-right">
+        <span class="badge-demo">Demo Restaurant Project</span>
+        <a href="#contact" class="notice-link">📞 +91 98765 43210</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Main Header -->
+  <header class="main-header" id="mainHeader">
+    <div class="container header-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="Foodie Hub Home">
+        <div class="logo-icon-wrap" aria-hidden="true">🍔</div>
+        <div class="brand-text-wrap">
+          <span class="brand-name">Foodie<span>Hub</span></span>
+          <span class="brand-location">📍 Coimbatore, Tamil Nadu</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#offers" class="nav-link">Offers</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <a href="tel:+919876543210" class="header-phone-btn" title="Call restaurant (demo)">
+          <span>📞</span>
+          <span>Order Call</span>
+        </a>
+        
+        <button class="header-cart-btn" id="openCartBtn" aria-label="View shopping cart">
+          <span>🛒</span>
+          <span>Cart</span>
+          <span class="cart-count-badge" id="cartCountBadge">0</span>
+        </button>
+
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Home / Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-eyebrow">
+              <span class="badge-orange">🔥 Coimbatore's #1 Rated Fast Food Hub</span>
+            </div>
+            <h1 class="hero-title">
+              Fresh Food, <br>
+              <span class="gradient-text">Great Taste!</span>
+            </h1>
+            <p class="hero-desc">
+              Satisfy your cravings with sizzling gourmet burgers, stone-baked pizzas, loaded fries, and signature South Indian fusion snacks. Crafted daily with 100% farm-fresh ingredients in the heart of Coimbatore.
+            </p>
+            <div class="hero-actions">
+              <a href="#menu" class="btn btn-primary">
+                <span>🍽️</span> Explore Menu
+              </a>
+              <button class="btn btn-secondary" id="heroOrderNowBtn">
+                <span>⚡</span> Order Now
+              </button>
+            </div>
+            
+            <div class="hero-stats">
+              <div class="stat-item">
+                <div class="stat-num" id="statFoodies">15,000+</div>
+                <div class="stat-label">Happy Foodies</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-num">4.9 ★</div>
+                <div class="stat-label">Google Rating</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-num">28 Mins</div>
+                <div class="stat-label">Avg. Delivery Time</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-circle-bg"></div>
+            
+            <!-- Floating Rating Badge -->
+            <div class="floating-badge badge-top">
+              <div class="badge-icon">⭐</div>
+              <div>
+                <div class="badge-text-title">4.9 / 5 Rating</div>
+                <div class="badge-text-desc">From 1,400+ Kovai foodies</div>
+              </div>
+            </div>
+
+            <!-- Main Hero Image -->
+            <div class="hero-image-wrap">
+              <img src="/images/hero-burger.jpg" alt="Towering double patty crispy Kovai chicken burger with melting cheddar cheese and golden fries" width="480" height="460" fetchpriority="high">
+            </div>
+
+            <!-- Floating Delivery Badge -->
+            <div class="floating-badge badge-bottom">
+              <div class="badge-icon">🛵</div>
+              <div>
+                <div class="badge-text-title">30 Min Delivery</div>
+                <div class="badge-text-desc">Express delivery in Kovai</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Express Delivery Strip -->
+    <div class="delivery-strip" aria-label="Feature highlights">
+      <div class="container">
+        <div class="strip-items">
+          <div class="strip-item">
+            <span class="strip-icon">🥬</span>
+            <span>100% Fresh Local Produce</span>
+          </div>
+          <div class="strip-item">
+            <span class="strip-icon">🧼</span>
+            <span>Hygienic Open Kitchen</span>
+          </div>
+          <div class="strip-item">
+            <span class="strip-icon">🛵</span>
+            <span>Fast 30-Min Coimbatore Delivery</span>
+          </div>
+          <div class="strip-item">
+            <span class="strip-icon">🏷️</span>
+            <span>Pocket-Friendly Prices in ₹</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. About Us Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-media-col">
+            <img src="/images/restaurant-interior.jpg" alt="Foodie Hub modern restaurant dine-in hall in Coimbatore with glowing neon sign" class="about-img-main" loading="lazy">
+            <div class="about-experience-card">
+              <div class="experience-years">100%</div>
+              <div class="experience-text">Fresh Taste Guarantee</div>
+            </div>
+          </div>
+
+          <div class="about-content-col">
+            <span class="section-tag">About Foodie Hub</span>
+            <h2 class="section-title">Passion for Fresh Food, Crafted for Coimbatore</h2>
+            <p class="about-body-text">
+              Born in Coimbatore with an unapologetic love for delicious fast food, <strong>Foodie Hub</strong> combines international street food favorites with bold Tamil Nadu flavors. From hand-crafted burger patties and woodfired pizzas to crispy Kovai fusion snack bites, every dish is made to order using fresh ingredients, natural spices, and zero compromise on hygiene.
+            </p>
+
+            <div class="about-features-grid">
+              <div class="about-feature-box">
+                <div class="feature-box-icon">🧑‍🍳</div>
+                <div>
+                  <h3 class="feature-box-title">Master Chefs</h3>
+                  <p class="feature-box-desc">Seasoned culinary pros preparing hot meals on demand.</p>
+                </div>
+              </div>
+              <div class="about-feature-box">
+                <div class="feature-box-icon">🧀</div>
+                <div>
+                  <h3 class="feature-box-title">Pure Dairy & Cheese</h3>
+                  <p class="feature-box-desc">100% real mozzarella and farm paneer, no substitutes.</p>
+                </div>
+              </div>
+              <div class="about-feature-box">
+                <div class="feature-box-icon">🌿</div>
+                <div>
+                  <h3 class="feature-box-title">Fresh Kovai Spices</h3>
+                  <p class="feature-box-desc">Locally procured peppers, curries, and aromatic herbs.</p>
+                </div>
+              </div>
+              <div class="about-feature-box">
+                <div class="feature-box-icon">❤️</div>
+                <div>
+                  <h3 class="feature-box-title">Customer Satisfaction</h3>
+                  <p class="feature-box-desc">Over 15,000 delighted foodies across Coimbatore.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="#menu" class="btn btn-primary">
+              <span>🍔</span> Discover Our Flavors
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Food Menu Section -->
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Our Delicious Menu</span>
+          <h2 class="section-title">Explore Our Flavor-Packed Menu</h2>
+          <p class="section-subtitle">
+            From sizzling burgers to South Indian snack fusions, find your favorite meal made fresh to order.
+          </p>
+        </div>
+
+        <div class="menu-controls-wrapper">
+          <!-- Category Tabs -->
+          <div class="category-tabs-scroll" id="categoryTabs" role="tablist">
+            <!-- Populated via JS -->
+          </div>
+
+          <!-- Search and Filter Bar -->
+          <div class="menu-sub-bar">
+            <div class="search-box-wrap">
+              <span class="search-icon">🔍</span>
+              <input type="text" id="menuSearchInput" class="menu-search-input" placeholder="Search burger, pizza, fries, shakes..." aria-label="Search food items">
+            </div>
+
+            <div class="menu-filter-actions">
+              <button class="diet-toggle-btn" id="vegOnlyToggleBtn" aria-pressed="false">
+                <span class="diet-indicator veg"></span>
+                <span>Pure Veg Only</span>
+              </button>
+
+              <select class="sort-select" id="sortSelect" aria-label="Sort menu items">
+                <option value="recommended">Featured / Bestsellers</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="rating-desc">Top Customer Rated</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Menu Cards Grid -->
+        <div class="menu-grid" id="menuGrid">
+          <!-- Menu items rendered dynamically via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Our Services Section -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">What We Offer</span>
+          <h2 class="section-title">Exceptional Services for Every Craving</h2>
+          <p class="section-subtitle">
+            Whether you are sitting down with family or ordering a midnight feast to your doorstep, we have you covered.
+          </p>
+        </div>
+
+        <div class="services-grid" id="servicesGrid">
+          <!-- Populated from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Special Offers & Combos Section -->
+    <section class="offers-section" id="offers">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" style="color: var(--primary);">Special Discounts & Deals</span>
+          <h2 class="section-title">Unbeatable Combos & Offers</h2>
+          <p class="section-subtitle">
+            Save big on our chef-curated mega combos and exclusive Coimbatore promotional coupon codes.
+          </p>
+        </div>
+
+        <!-- Combos Grid -->
+        <div class="combos-grid" id="combosGrid">
+          <!-- Populated from data.js -->
+        </div>
+
+        <!-- Active Discount Coupons -->
+        <div class="coupons-header">
+          <h3 class="coupons-title">🎟️ Active Promo Coupons — Click to Copy & Apply</h3>
+        </div>
+        <div class="coupons-grid" id="couponsGrid">
+          <!-- Populated from data.js -->
+        </div>
+
+        <!-- Flash Deal Countdown Banner -->
+        <div class="flash-deal-banner">
+          <div class="flash-left">
+            <span class="flash-icon">⚡</span>
+            <div>
+              <div class="flash-heading">Today's Flash Deal: Free Peri-Peri Fries with any Medium Pizza!</div>
+              <div class="flash-subtext">Offer expires tonight. Use coupon code at checkout or order below.</div>
+            </div>
+          </div>
+          <div class="countdown-timer" id="countdownTimer">
+            <div class="time-box">
+              <div class="time-num" id="hoursNum">06</div>
+              <div class="time-label">Hours</div>
+            </div>
+            <span style="font-weight: 800; font-size: 1.2rem; color: var(--primary);">:</span>
+            <div class="time-box">
+              <div class="time-num" id="minsNum">42</div>
+              <div class="time-label">Mins</div>
+            </div>
+            <span style="font-weight: 800; font-size: 1.2rem; color: var(--primary);">:</span>
+            <div class="time-box">
+              <div class="time-num" id="secsNum">19</div>
+              <div class="time-label">Secs</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Customer Reviews Section -->
+    <section class="reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Word on the Street</span>
+          <h2 class="section-title">Loved by Coimbatore Foodies</h2>
+          <p class="section-subtitle">
+            See what our verified customers have to say about our juicy burgers, prompt delivery, and warm dining experience.
+          </p>
+        </div>
+
+        <!-- Reviews Summary Bar -->
+        <div class="reviews-summary-card">
+          <div class="rating-overview-left">
+            <div class="rating-big-num">4.9</div>
+            <div>
+              <div class="rating-stars-group">★★★★★</div>
+              <div class="rating-count-label">Based on 1,450+ verified customer ratings in Coimbatore</div>
+            </div>
+          </div>
+          <button class="btn btn-secondary" id="openReviewModalBtn">
+            <span>✍️</span> Write a Demo Review
+          </button>
+        </div>
+
+        <!-- Reviews Cards Grid -->
+        <div class="reviews-grid" id="reviewsGrid">
+          <!-- Populated from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Food Gallery Section -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Visual Feasts</span>
+          <h2 class="section-title">Our Food & Restaurant Gallery</h2>
+          <p class="section-subtitle">
+            A glimpse into our sizzling dishes, open kitchen, and welcoming Coimbatore restaurant ambiance.
+          </p>
+        </div>
+
+        <!-- Gallery Filter Tabs -->
+        <div class="gallery-filter-tabs" id="galleryFilterTabs">
+          <button class="gallery-tab-btn active" data-gallery-cat="all">All Photos</button>
+          <button class="gallery-tab-btn" data-gallery-cat="burgers">Burgers</button>
+          <button class="gallery-tab-btn" data-gallery-cat="combos">Combos & Platter</button>
+          <button class="gallery-tab-btn" data-gallery-cat="fusion">South Indian Fusion</button>
+          <button class="gallery-tab-btn" data-gallery-cat="interior">Restaurant Ambience</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Populated from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Contact Us Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Visit or Contact Foodie Hub</h2>
+          <p class="section-subtitle">
+            Located right in the commercial heartbeat of Coimbatore. Questions or custom orders? Reach out anytime!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details & Mockup Map -->
+          <div class="contact-info-panel">
+            <div class="info-card">
+              <div class="info-icon-box">📍</div>
+              <div>
+                <h3 class="info-title">Our Restaurant Location</h3>
+                <p class="info-desc">142, Cross Cut Road, Near Gandhipuram Signal, Coimbatore, Tamil Nadu - 641012</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon-box">📞</div>
+              <div>
+                <h3 class="info-title">Phone & WhatsApp</h3>
+                <p class="info-desc">Order Helpline: +91 98765 43210 <br> WhatsApp: +91 98765 43210 <span class="badge-demo">Demo</span></p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon-box">⏰</div>
+              <div>
+                <h3 class="info-title">Opening Hours</h3>
+                <p class="info-desc">Monday – Sunday: 11:00 AM – 11:30 PM <br> Express Delivery: Open until 12:00 AM Midnight</p>
+              </div>
+            </div>
+
+            <!-- Stylized Coimbatore Map Card -->
+            <div class="map-card-mockup">
+              <div class="map-header">
+                <span class="map-title">📍 Foodie Hub @ Cross Cut Road, Gandhipuram</span>
+                <span style="font-size: 0.75rem; color: #9CA3AF;">Coimbatore</span>
+              </div>
+              <div class="map-graphic">
+                <span class="map-pin">📍</span>
+                <span class="map-label">Foodie Hub Central Kitchen</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Contact Form -->
+          <div class="contact-form-card">
+            <h3 style="font-size: 1.4rem; margin-bottom: 8px;">Send Us a Message</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 24px;">
+              Have a catering query, feedback, or special request? Drop a message and our Coimbatore team will respond promptly.
+            </p>
+
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group" id="groupName">
+                  <label for="contactName" class="form-label">Your Name *</label>
+                  <input type="text" id="contactName" class="form-control" placeholder="e.g. Anand Kumar" required>
+                  <span class="form-error">Please enter your name.</span>
+                </div>
+                <div class="form-group" id="groupPhone">
+                  <label for="contactPhone" class="form-label">Phone Number *</label>
+                  <input type="tel" id="contactPhone" class="form-control" placeholder="10-digit mobile number" required>
+                  <span class="form-error">Enter a valid 10-digit phone number.</span>
+                </div>
+              </div>
+
+              <div class="form-group" id="groupEmail">
+                <label for="contactEmail" class="form-label">Email Address *</label>
+                <input type="email" id="contactEmail" class="form-control" placeholder="name@example.com" required>
+                <span class="form-error">Please enter a valid email address.</span>
+              </div>
+
+              <div class="form-group" id="groupSubject">
+                <label for="contactSubject" class="form-label">Subject</label>
+                <select id="contactSubject" class="form-control">
+                  <option value="general">General Inquiry</option>
+                  <option value="catering">Bulk Party / Corporate Catering</option>
+                  <option value="feedback">Food & Taste Feedback</option>
+                  <option value="delivery">Delivery Assistance</option>
+                </select>
+              </div>
+
+              <div class="form-group" id="groupMessage">
+                <label for="contactMessage" class="form-label">Your Message *</label>
+                <textarea id="contactMessage" rows="4" class="form-control" placeholder="Tell us how we can help you..." required></textarea>
+                <span class="form-error">Please enter your message (minimum 10 characters).</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span>📨</span> Send Message (Demo)
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 10. Footer Section -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand-title">Foodie<span>Hub</span></div>
+          <p class="footer-desc">
+            Coimbatore’s favorite modern fast-food joint. Serving sizzling gourmet burgers, stone-baked pizzas, fries, and authentic South Indian fusion snacks made fresh daily.
+          </p>
+          <div class="social-links">
+            <a href="#home" class="social-icon-btn" aria-label="Instagram">📸</a>
+            <a href="#home" class="social-icon-btn" aria-label="Facebook">📘</a>
+            <a href="#home" class="social-icon-btn" aria-label="Twitter">🐦</a>
+            <a href="#home" class="social-icon-btn" aria-label="YouTube">▶️</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Us</a></li>
+            <li><a href="#menu" class="footer-link">Our Menu</a></li>
+            <li><a href="#services" class="footer-link">Services</a></li>
+            <li><a href="#offers" class="footer-link">Special Combos</a></li>
+            <li><a href="#reviews" class="footer-link">Customer Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Coimbatore Zones</h4>
+          <ul class="footer-links-list">
+            <li><a href="#menu" class="footer-link">📍 Gandhipuram (Central)</a></li>
+            <li><a href="#menu" class="footer-link">📍 RS Puram Delivery</a></li>
+            <li><a href="#menu" class="footer-link">📍 Peelamedu & Tidel Park</a></li>
+            <li><a href="#menu" class="footer-link">📍 Saibaba Colony</a></li>
+            <li><a href="#menu" class="footer-link">📍 Saravanampatti IT Corridor</a></li>
+            <li><a href="#menu" class="footer-link">📍 Singanallur & Ramanathapuram</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Newsletter & Offers</h4>
+          <p class="footer-newsletter-text">Subscribe to get secret weekend discount coupons and new menu dish alerts.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" id="newsletterEmail" class="newsletter-input" placeholder="Enter your email" required aria-label="Email for newsletter">
+            <button type="submit" class="newsletter-btn">Join</button>
+          </form>
+          <div style="margin-top: 18px; font-size: 0.8rem; color: #6B7280;">
+            ⏰ Open 11:00 AM – 11:30 PM Everyday
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Foodie Hub, Coimbatore. All rights reserved.
+        </div>
+        <div class="footer-demo-disclaimer">
+          ⚠️ <strong>Internship Showcase Project:</strong> All menus, prices, locations and reviews are presented as functional demonstration content.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 8. Shopping Cart Drawer -->
+  <div class="cart-drawer-backdrop" id="cartDrawerBackdrop">
+    <div class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartDrawerTitle">
+      <div class="cart-drawer-header">
+        <h3 class="cart-drawer-title" id="cartDrawerTitle">
+          <span>🛒</span> Your Food Cart
+        </h3>
+        <button class="close-drawer-btn" id="closeCartBtn" aria-label="Close cart">✕</button>
+      </div>
+
+      <div class="cart-items-container" id="cartItemsList">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <div class="cart-drawer-footer" id="cartFooter">
+        <!-- Coupon input -->
+        <div class="cart-coupon-box">
+          <input type="text" id="couponInput" class="cart-coupon-input" placeholder="Coupon Code (e.g. FOODIE100)">
+          <button class="apply-coupon-btn" id="applyCouponBtn">Apply</button>
+        </div>
+        <div id="couponStatusMessage" style="font-size: 0.78rem; margin-top: -10px; margin-bottom: 12px; display: none;"></div>
+
+        <!-- Bill breakdown -->
+        <div class="bill-breakdown">
+          <div class="bill-row">
+            <span>Item Subtotal:</span>
+            <span id="billSubtotal">₹0</span>
+          </div>
+          <div class="bill-row discount-row" id="billDiscountRow" style="display: none;">
+            <span>Coupon Discount:</span>
+            <span id="billDiscount">-₹0</span>
+          </div>
+          <div class="bill-row">
+            <span>Delivery Fee (Coimbatore):</span>
+            <span id="billDelivery">₹40</span>
+          </div>
+          <div class="bill-row">
+            <span>GST (5%):</span>
+            <span id="billTax">₹0</span>
+          </div>
+          <div class="bill-row total-row">
+            <span>Grand Total:</span>
+            <span id="billGrandTotal">₹0</span>
+          </div>
+        </div>
+
+        <button class="btn btn-primary checkout-btn" id="proceedCheckoutBtn">
+          <span>🔒</span> Proceed to Checkout (₹<span id="btnPayAmount">0</span>)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout Modal -->
+  <div class="modal-overlay" id="checkoutModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title">🛵 Finalize Your Foodie Hub Order</h3>
+        <button class="close-drawer-btn" id="closeCheckoutBtn" aria-label="Close checkout">✕</button>
+      </div>
+      <div class="modal-body">
+        <form id="checkoutForm" novalidate>
+          <!-- Order Type Switch -->
+          <div class="order-type-switch">
+            <div class="type-option-card selected" id="typeDelivery" data-type="delivery">
+              <div style="font-size: 1.3rem;">🛵</div>
+              <div>Home Delivery</div>
+              <div style="font-size: 0.72rem; color: #6B7280;">30 Mins in Kovai</div>
+            </div>
+            <div class="type-option-card" id="typeTakeaway" data-type="takeaway">
+              <div style="font-size: 1.3rem;">🛍️</div>
+              <div>Takeaway Pickup</div>
+              <div style="font-size: 0.72rem; color: #6B7280;">Cross Cut Rd, Gandhipuram</div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group" id="groupOrderName">
+              <label for="orderName" class="form-label">Full Name *</label>
+              <input type="text" id="orderName" class="form-control" placeholder="e.g. Karthik" required>
+              <span class="form-error">Please enter your name.</span>
+            </div>
+            <div class="form-group" id="groupOrderPhone">
+              <label for="orderPhone" class="form-label">Mobile Number *</label>
+              <input type="tel" id="orderPhone" class="form-control" placeholder="10-digit number" required>
+              <span class="form-error">Enter a valid 10-digit Indian phone number.</span>
+            </div>
+          </div>
+
+          <div class="form-group" id="groupOrderLocality">
+            <label for="orderLocality" class="form-label">Coimbatore Area / Locality *</label>
+            <select id="orderLocality" class="form-control" required>
+              <option value="">Select your area...</option>
+              <!-- Populated from data.js -->
+            </select>
+            <span class="form-error">Please select your delivery area.</span>
+          </div>
+
+          <div class="form-group" id="groupOrderAddress">
+            <label for="orderAddress" class="form-label">Street Address & Landmark *</label>
+            <input type="text" id="orderAddress" class="form-control" placeholder="Door No, Street Name, Landmark" required>
+            <span class="form-error">Please provide your address.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="orderNotes" class="form-label">Kitchen Notes / Preferences</label>
+            <input type="text" id="orderNotes" class="form-control" placeholder="e.g. Extra spicy, no onions, keep cutlery">
+          </div>
+
+          <!-- Demo Payment Options -->
+          <div class="form-group">
+            <label class="form-label">Select Payment Method (Demo)</label>
+            <div class="payment-methods-grid">
+              <div class="pay-card selected" data-pay="upi">
+                <div>📱</div>
+                <div>UPI / GPay</div>
+              </div>
+              <div class="pay-card" data-pay="cod">
+                <div>💵</div>
+                <div>Cash on Delivery</div>
+              </div>
+              <div class="pay-card" data-pay="card">
+                <div>💳</div>
+                <div>Credit / Debit</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="demo-checkout-notice">
+            ℹ️ <strong>Demonstration Checkout:</strong> No real payment or card details are processed. This simulation is created for portfolio and internship evaluation.
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 18px;" id="placeOrderSubmitBtn">
+            <span>✨</span> Confirm & Place Demo Order (₹<span id="modalPayAmount">0</span>)
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Live Order Tracking Simulation Modal -->
+  <div class="modal-overlay" id="trackingModal">
+    <div class="modal-card tracking-card">
+      <div class="modal-body" style="padding: 32px 28px;">
+        <div class="tracking-header-icon">🎉</div>
+        <h2 style="font-size: 1.6rem; margin-bottom: 6px;">Order Confirmed!</h2>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 14px;">
+          Thank you for choosing Foodie Hub Coimbatore! Your food is being prepared fresh.
+        </p>
+
+        <div class="order-code-badge" id="trackingOrderCode">#FH-CBE-8492</div>
+
+        <!-- Animated 4-step progress timeline -->
+        <div class="tracking-timeline">
+          <div class="tracking-step done" id="step1">
+            <div class="step-marker">✓</div>
+            <div>
+              <div class="step-title">Order Received</div>
+              <div class="step-desc">Received at Gandhipuram Central Kitchen</div>
+            </div>
+          </div>
+          <div class="tracking-step active" id="step2">
+            <div class="step-marker">🔥</div>
+            <div>
+              <div class="step-title">Cooking in Open Kitchen</div>
+              <div class="step-desc">Chef is grilling patties & baking fresh</div>
+            </div>
+          </div>
+          <div class="tracking-step" id="step3">
+            <div class="step-marker">🛵</div>
+            <div>
+              <div class="step-title">Out for Delivery</div>
+              <div class="step-desc">Rider assigned: Murugan S. (Hero Electric)</div>
+            </div>
+          </div>
+          <div class="tracking-step" id="step4">
+            <div class="step-marker">🏡</div>
+            <div>
+              <div class="step-title">Delivered Hot & Fresh</div>
+              <div class="step-desc">Estimated in 25-30 minutes</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: #FFF9F2; border: 1px solid var(--cream-border); border-radius: var(--radius-md); padding: 14px; margin-bottom: 20px; font-size: 0.82rem; text-align: left;">
+          <div><strong>Delivery Address:</strong> <span id="trackCustomerAddress">-</span></div>
+          <div><strong>Items Ordered:</strong> <span id="trackCustomerItems">-</span></div>
+          <div><strong>Total Amount:</strong> <span id="trackCustomerTotal">-</span></div>
+        </div>
+
+        <button class="btn btn-secondary" id="closeTrackingBtn" style="width: 100%;">
+          Close & Return to Menu
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Demo Review Modal -->
+  <div class="modal-overlay" id="reviewModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title">✍️ Leave a Demo Review</h3>
+        <button class="close-drawer-btn" id="closeReviewBtn" aria-label="Close review modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <form id="reviewForm" novalidate>
+          <div class="form-group" id="groupRevName">
+            <label for="revName" class="form-label">Your Name *</label>
+            <input type="text" id="revName" class="form-control" placeholder="e.g. Soundarya Devi" required>
+            <span class="form-error">Please enter your name.</span>
+          </div>
+
+          <div class="form-group" id="groupRevLoc">
+            <label for="revLoc" class="form-label">Your Coimbatore Area *</label>
+            <select id="revLoc" class="form-control" required>
+              <option value="">Select your area...</option>
+            </select>
+            <span class="form-error">Please select your area.</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Star Rating *</label>
+            <div style="display: flex; gap: 8px; font-size: 1.8rem; cursor: pointer;" id="starRatingSelect">
+              <span class="star-rating-select-item" data-value="1">★</span>
+              <span class="star-rating-select-item" data-value="2">★</span>
+              <span class="star-rating-select-item" data-value="3">★</span>
+              <span class="star-rating-select-item" data-value="4">★</span>
+              <span class="star-rating-select-item active" data-value="5">★</span>
+            </div>
+            <input type="hidden" id="revStars" value="5">
+          </div>
+
+          <div class="form-group" id="groupRevText">
+            <label for="revText" class="form-label">Your Review & Food Feedback *</label>
+            <textarea id="revText" rows="3" class="form-control" placeholder="What did you love about Foodie Hub dishes?" required></textarea>
+            <span class="form-error">Please share your feedback (minimum 10 characters).</span>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            Post Demo Review
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image Lightbox Modal for Gallery -->
+  <div class="modal-overlay" id="galleryLightbox">
+    <div class="modal-card" style="max-width: 720px; background: #000000; color: #FFFFFF;">
+      <div style="position: relative;">
+        <button class="close-drawer-btn" id="closeLightboxBtn" style="position: absolute; top: 12px; right: 12px; color: #FFFFFF; background: rgba(0,0,0,0.6);" aria-label="Close image preview">✕</button>
+        <img id="lightboxImg" src="" alt="Gallery Preview" style="width: 100%; max-height: 480px; object-fit: contain;">
+      </div>
+      <div style="padding: 20px 24px;">
+        <h3 id="lightboxTitle" style="color: #FFFFFF; font-size: 1.3rem; margin-bottom: 6px;"></h3>
+        <p id="lightboxDesc" style="color: #D1D5DB; font-size: 0.88rem; margin-bottom: 16px;"></p>
+        <a href="#menu" class="btn btn-primary" id="lightboxOrderBtn">
+          Order Dishes
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Cart Action Button -->
+  <button class="floating-cart-fab" id="floatingCartFab" aria-label="Open floating cart">
+    <span>🛒</span>
+    <span>View Cart</span>
+    <span class="fab-badge" id="fabCountBadge">0</span>
+  </button>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Main JavaScript App Module -->
+  <script type="module" src="/src/js/app.js"></script>
+</body>
+</html>
